@@ -1,7 +1,17 @@
 # Flask-API
 
 ## quick start
+
+安装
+```shell
+pip install Flask-Base-API
+```
+
+使用
 ```python
+from flaskapi import API
+
+
 api = API('ttc')
 
 @api.route('/main')

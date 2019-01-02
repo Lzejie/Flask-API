@@ -2,7 +2,7 @@
 # @Time    : 18/12/26 上午11:40
 # @Author  : Edward
 # @Site    :
-# @File    : API.py
+# @File    : flaskapi.py
 # @Software: PyCharm Community Edition
 
 from flask import Flask
@@ -34,7 +34,7 @@ class API(Flask):
 
     def run(self, **kwargs):
         for bluprint in self.blueprint_list:
-            api.register_blueprint(
+            self.register_blueprint(
                 bluprint['blueprint'],
                 url_prefix=bluprint['prefix']
             )
