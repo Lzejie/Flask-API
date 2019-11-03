@@ -24,6 +24,6 @@ setup(
         'itsdangerous==1.1.0',
         'Jinja2==2.10',
         'MarkupSafe==1.1.0',
-        'Werkzeug==0.14.1',
+        'Werkzeug==0.15.3',
     ]
 )
